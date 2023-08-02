@@ -71,7 +71,7 @@ const Locations = () => {
 
     const Map = (props) => {
         return (
-            <div style={{"margin-top":"%"}}>
+            <div style={{"marginTop":"5%"}}>
                 <h2 style={{"width":"100%", "textAlign":"center"}}>{props.location}</h2>
                 <iframe src={props.src} style={{"border":"0"}} allowFullScreen={true} loading="eager" referrerPolicy="no-referrer-when-downgrade" className='iFrame'></iframe>
             </div>
