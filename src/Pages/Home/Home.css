@@ -1,0 +1,217 @@
+.home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.homeContainer {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.homeGrid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.columns {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.columns h1 {
+    width: 100%;
+    text-align: center;
+}
+
+#leftColumn {
+
+}
+
+#rightColumn {
+    
+}
+
+.hourTable {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.imageContainer {
+    margin-top: 5%;
+    height: 40%;
+    width: 60%;
+}
+
+.jumbotron {
+    width: 100%;
+    height: 100%;
+    background-image: url("/tito.jpg");
+    background-position: center -600px;
+}
+
+.locations {
+    width: 100%;
+    height: 30%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.locationsContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.iFrame {
+    width: 100%;
+    height: 1000px;
+}
+
+#locations {
+    width: 20%;
+    font-size: 3rem;
+    text-align: center;
+    background-color: none;
+}
+
+select {
+    background-color: white !important;
+    border: none;
+    color: black !important;
+    font-family: 'Merriweather' !important;
+}
+
+.tito {
+    width: 80%;
+    height: 60lvh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.titoInfo {
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#tito {
+    height: 70%;
+    border-radius: 190px;
+}
+
+.iconContainer {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 50%;
+}
+
+.iconContainer a {
+    color: black !important;
+}
+
+.iconSection {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+    .jumbotron {
+        display: none;
+    }
+
+    .homeGrid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .homeContainer {
+        margin-top: 80%;
+    }
+
+    .hoursTitle {
+        font-size: x-large;
+    }
+
+    .hourTable {
+        text-align: center;
+        font-size: small;
+        height: 0%;
+    }
+
+    .columns {
+        padding-top: 0%;
+    }
+
+    .locationsContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .iFrame {
+        width: 100%;
+        height: 450px;
+    }
+    
+    .locations {
+        align-content: flex-start;
+    }
+
+    .hour {
+        display: flex;
+        align-items: center;
+    }
+
+    #Sunday {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .column{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .titoInfo {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #explain {
+        text-align: center;
+    }
+
+    .iconContainer {
+        width: 100%;
+    }
+
+    .image {
+        height: 80%;
+    }
+    
+}
