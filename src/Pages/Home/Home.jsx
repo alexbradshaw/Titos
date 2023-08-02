@@ -43,7 +43,7 @@ const Hours = () => {
 
     return (
         <div>
-            <h1 className='hoursTitle'>Hours</h1>
+            <h1>Hours</h1>
             <div className='column'>
                 {
                     times.map((hours, index)=>{
@@ -71,7 +71,7 @@ const Locations = () => {
 
     const Map = (props) => {
         return (
-            <div className='locations columns'>
+            <div style={{"margin-top":"%"}}>
                 <h2 style={{"width":"100%", "textAlign":"center"}}>{props.location}</h2>
                 <iframe src={props.src} style={{"border":"0"}} allowFullScreen={true} loading="eager" referrerPolicy="no-referrer-when-downgrade" className='iFrame'></iframe>
             </div>
@@ -140,8 +140,6 @@ const Services = () => {
 }
 
 const Tito = () => {
-    const date = new Date();
-    const currentDate = date.getFullYear();
 
     const icons = [
         {"social":"mingcute:phone-fill", "link":"tel:+17063513376"},
@@ -168,11 +166,12 @@ const Tito = () => {
                     <img src="/titoheadshot.jpg" alt="Picture of Tito" id='tito'/>
                 </div>
                 <div id='explain'>
-                    <h1>Profesional Hairstylist</h1>
-                    <h2>Cutting hair for {currentDate - 2006} years</h2>
+                    <h1>Professional Hairstylist</h1>
+                    <h2>Over a Decade of Experience</h2>
                     <h2>Passionate</h2>
                     <h2>Expert Level Care</h2>
-                    <h2>Men, Women, Children</h2>
+                    <h3>for</h3>
+                    <h2>Men Women Children</h2>
                     <div className="iconSection" style={{"width":"100%"}}>
                         <div className='iconContainer'>
                             {icons.map((icon, index)=> {
