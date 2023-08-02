@@ -18,12 +18,13 @@
 
 @media screen and (max-width: 800px) {
   .App {
-    height: 550lvh;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: visible
   }
   
   .display {
-    padding-top: 8vh;
-    height: 633lvh;
+    padding-bottom: 0;
+    height: auto;
   }
-  
 }
