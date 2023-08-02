@@ -54,22 +54,35 @@
 
 .locations {
     width: 100%;
-    height: 30%;
+    height: 1200px;
     margin-top: 5%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-self: flex-end;
 }
 
 .locationsContainer {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.locationsContainer > * {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: flex-end;
 }
 
 .iFrame {
     width: 100%;
     height: 1000px;
+    align-self: flex-end;
 }
 
 #locations {
@@ -173,22 +186,21 @@ select {
         padding-top: 0%;
     }
 
-    .locationsContainer > * {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: flex-end;
-    }
-
     .iFrame {
         width: 100%;
         height: 450px;
     }
     
+    select {
+        width: 24px !important;
+        margin-left: 35px;
+    }
+
     .locations {
         align-content: flex-start;
         margin-top: 25%;
         margin-bottom: 0%;
+        height: auto;
     }
 
     .hour {
@@ -232,6 +244,5 @@ select {
 
     #tito {
         height: 100%;
-    }
-    
+    }    
 }
