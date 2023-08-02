@@ -34,14 +34,6 @@
     text-align: center;
 }
 
-#leftColumn {
-
-}
-
-#rightColumn {
-    
-}
-
 .hourTable {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -101,6 +93,7 @@ select {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 5%;
+    margin-bottom: 8%;
 }
 
 .titoInfo {
@@ -138,6 +131,19 @@ select {
     justify-content: center;
 }
 
+
+@media screen and (max-width: 1500px) {
+    .iconContainer {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .iconContainer {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .jumbotron {
         display: none;
@@ -150,11 +156,11 @@ select {
     }
 
     .homeContainer {
-        margin-top: 80%;
+        margin-top: 170%;
     }
 
-    .hoursTitle {
-        font-size: x-large;
+    #rightColumn {
+        margin-top: 30%;
     }
 
     .hourTable {
@@ -167,8 +173,11 @@ select {
         padding-top: 0%;
     }
 
-    .locationsContainer {
-        grid-template-columns: 1fr;
+    .locationsContainer > * {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
     }
 
     .iFrame {
@@ -178,6 +187,8 @@ select {
     
     .locations {
         align-content: flex-start;
+        margin-top: 25%;
+        margin-bottom: 0%;
     }
 
     .hour {
@@ -212,6 +223,15 @@ select {
 
     .image {
         height: 80%;
+    }
+
+    .iconContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 10px;
+    }
+
+    #tito {
+        height: 100%;
     }
     
 }
