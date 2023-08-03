@@ -1,4 +1,263 @@
 .about {
     height: 100%;
     background-color: white !important;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.aboutContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.aboutContainer > * {
+    width: auto;
+}
+
+.aboutInformation {
+    width: 40%;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.galleryDisplay {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 75px;
+    row-gap: 35px;
+    overflow: hidden;
+    column-gap: 35px;
+}
+
+.galleryDisplay > * {
+    border-radius: 10px;
+}
+
+.testimonies {
+    width: 100%;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 300px;
+}
+
+.testimoniesContainer {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+}
+
+.testimoniesContainer > * {
+    display: flex;
+    justify-content: center;
+}
+
+.testimony {
+    width: 600px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    padding-top: 25px
+}
+
+.testimony > * {
+    width: 80%;
+}
+
+.tito {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    margin-bottom: 300px;
+}
+
+.titoInfo {
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#tito {
+    height: 70%;
+    border-radius: 190px;
+}
+
+#meetTito {
+    font-size: 4.5rem;
+}
+
+.iconContainer {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 50%;
+}
+
+.iconContainer a {
+    color: black !important;
+}
+
+.iconSection {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#explain {
+    text-align: start;
+}
+
+#outsideTitle {
+    display: none;
+}
+
+#decade {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1500px) {
+    .testimoniesContainer {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+    }
+
+    .iconContainer {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #meetTito {
+        font-size: 3.5rem;
+    }
+
+    .galleryDisplay {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:1200px){
+
+    .testimoniesContainer {
+        grid-template-columns: 1fr;
+    }
+
+    #meetTito {
+        font-size: 2.5rem;
+    }
+
+    .iconContainer {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    .galleryDisplay {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .aboutInformation {
+        width: 80%;
+        margin-top: 25px;
+    }
+
+    .titoInfo {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .titoHeader {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 30px;
+    }
+
+    .tito {
+        margin-bottom: 100px;
+    }
+
+    #meetTito {
+        font-size: 2.0rem;
+    }
+
+    #tito {
+        width: 150px;
+        height: 180px;
+    }    
+
+    #outsideTitle {
+        font-size: 1.2rem;
+        display: inline;
+        margin-top: 55px;
+        margin-left: 20px;
+    }
+
+    #title {
+        font-size: 1.5rem;
+        display: none;
+    }
+
+    .iconContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 10px;
+        width: 100%;
+    }
+
+    #explain {
+        text-align: center;
+        font-size: .75rem;
+        margin-top: 35px;
+    }
+
+    .gallery {
+        margin-top: 100px;
+    }
+
+    .gallery > * {
+        width: 80%;
+    }
+
+    .galleryDisplay {
+        row-gap: 7px;
+        margin-top: 45px;
+    }
+
+    .galleryDisplay > * {
+        width: 150px;
+    }
+
+    .testimonies {
+        margin-top: 150px;
+    }
+    
+    .testimoniesContainer {
+        width: auto;
+    }
+
+    .testimony {
+        width: 350px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
 }
