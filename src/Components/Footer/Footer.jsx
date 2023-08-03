@@ -31,6 +31,9 @@ const Footer = () => {
                         })}
                 </div>
             </div>
+            <div id='ab'>
+                <h5>Designed and Maintained by Alex Bradshaw</h5>
+            </div>
         </div>
     );
 
