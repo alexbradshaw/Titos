@@ -1,16 +1,172 @@
 import './About.css';
 
+import AnIcon from '../../Components/AnIcon/AnIcon';
+
 const About = () => {
 
     return (
         <div className='about'>
             <div className='aboutContainer'>
-                <a>About</a>
-                <a>About</a>
+                <Tito/>
+                <AboutUs/>
+                <Testimonies/>
+                <Gallery/>
             </div>
         </div>
     );
 
 };
+
+const AboutUs = () => {
+    return (
+        <div className='aboutInformation'>
+            <div>
+                <h1>About Tito's Barbershop</h1>
+            </div>
+            <div>
+                <p>Tito's Professional Barbershop provides high quality salon services for men, women and kids, a unique customer focus, all in a warm, friendly atmosphere. We are a modern design barbershop that focuses on your hair's best experience. </p>
+            </div>
+        </div>
+    )
+}
+
+const Gallery = () => {
+
+    const photos = [
+        {"image":"/haircut1.jpg", "alt":"Photo of Facial"},
+        {"image":"/haircut2.jpg", "alt":""},
+        {"image":"/haircut3.jpg", "alt":""},
+        {"image":"/haircut4.jpg", "alt":""},
+        {"image":"/haircut5.jpg", "alt":""},
+        {"image":"/haircut6.jpg", "alt":""},
+        {"image":"/haircut7.jpg", "alt":""},
+        {"image":"/haircut8.jpg", "alt":""},
+        {"image":"/haircut9.jpg", "alt":""},
+        {"image":"/haircut10.jpg", "alt":""},
+        {"image":"/haircut11.jpg", "alt":""},
+        {"image":"/haircut12.jpg", "alt":""},
+        {"image":"/haircut13.jpg", "alt":""},
+    ]
+
+    return (
+        <div className='gallery'>
+            <div>
+                <div>
+                    <h1>Gallery</h1>
+                </div>
+                <div>
+                    <div className='galleryDisplay'>
+                        {
+                            photos.map((image, index)=>{
+                                return <img src={"/haircuts" + image.image} alt={image.alt} key={"haircut " + index}/>
+                            })
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+const Testimonies = () => {
+
+    const Testimony = (props) => {
+        return (
+            <div>
+                <div className='testimony'>
+                    <div>
+                        <div>{props.quote.quote}</div>
+                        <h2>-{props.quote.name}</h2>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+
+    const testimonies = [
+        {
+            "quote":"Quality cut with an even more quality experience. Even stayed open after hours to ensure the job was done! 5/5 recommend Tito's barbershop", 
+            "name":"Trent Azevedo"
+        },
+        {
+            "quote":"Great Business! Tito was very kind and definitely is a master at his craft. 10/10 would recommend!!", 
+            "name":"Jules T"
+        },
+        {
+            "quote":"Any one of the barbers do me right! I always do walk -in, so I don't mind waiting if they're busy. Hard to find good latino barbers in Athens, and I'm glad I did with Tito's!", 
+            "name":"K M"
+        },
+        {
+            "quote":"Best razor fade I've ever had. Even in the military. No one else is allowed to touch my hair.", 
+            "name":"Ernesto Flores"
+        },
+        {
+            "quote":"My barber for years now and never once let me down. Best Barber in town. Clean and sanitized environment. Fade to fullest satisfaction!", 
+            "name":"Orlando James"
+        },
+        {
+            "quote":"Top-notch service. I couldn't have been more pleased. I always leave with a big smile on my face and much more relaxed than when I arrived.Best razor fade I've ever had. Even in the military. No one else is allowed to touch my hair.", 
+            "name":"Alex Borges"
+        },
+    ]
+
+    return (
+        <div className='testimonies'>
+            <div style={{"width":"100%", "textAlign":"center"}}>
+                <h1>Testimonies</h1>
+            </div>
+            <div className='testimoniesContainer'>
+                {
+                    testimonies.map((quote, index) => {
+                        return <Testimony quote={quote} key={"testimony " + index}/>
+                    })
+                }
+            </div>
+        </div>
+    )
+}
+
+const Tito = () => {
+
+    const icons = [
+        {"social":"mingcute:phone-fill", "link":"tel:+17063513376"},
+        {"social":"mi:email", "link":"mailto:titogerman35@yahoo.com"},
+        {"social":"uiw:facebook", "link":"https://www.facebook.com/tito.suarez"},
+        {"social":"uil:instagram-alt", "link":"https://www.instagram.com/titoakagerman_thebarber"},
+        {"social":"cib:cashapp", "link":"https://cash.app/suarezgerm18"},
+        {"social":"ion:logo-venmo", "link":"https://account.venmo.com/u/German_suarez_2"},
+    ]
+
+    return (
+        <div className='tito'>
+            <h1 id="meetTito" style={{"width":"100%","textAlign":"center"}}>Meet Tito</h1>
+            <div className='titoInfo'>
+                <div className='titoHeader'>
+                    <div className='image'>
+                        <img src="/titoheadshot.jpg" alt="Picture of Tito" id='tito'/>
+                    </div>
+                    <h1 id='outsideTitle'>Professional Hairstylist</h1>
+                </div>
+                <div id='explain'>
+                    <h1 id='title'>Professional Hairstylist</h1>
+                    <h2>Over a <span id='decade'>Decade</span> of Experience</h2>
+                    <h2>Passionate</h2>
+                    <h2>Expert Level Care</h2>
+                    <h3>for</h3>
+                    <h2>Men Women Children</h2>
+                    <div className="iconSection" style={{"width":"100%"}}>
+                        <div className='iconContainer'>
+                            {icons.map((icon, index)=> {
+                                return (
+                                    <AnIcon link={icon.link} social={icon.social} index={index + 'icon'} key={index + 'component'}/>
+                                )
+                                })}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
 
 export default About;
