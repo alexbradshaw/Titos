@@ -1,9 +1,9 @@
 .footer {
     width: 100%;
-    height: 18lvh;
+    height: 20lvh;
     display: grid;
     grid-template-columns: 1fr;
-    background-color: #520303fb;
+    background-color: black;
 }
 
 .socialsContainer > a {
@@ -20,6 +20,7 @@
 
 .socials {
     width: 100%;
+    margin-top: 2%;
 }
 
 .foot {
@@ -37,11 +38,23 @@
     width: 80%;
 }
 
+h5 {
+    height: 15px;
+    color: white;
+}
+
+#ab {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 @media screen and (max-width: 800px) {
 
     .socials {
         display: flex;
         justify-content: center;
+        margin-top: 7%;
     }
 
     .footer {
