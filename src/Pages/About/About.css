@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 30px;
 }
 
 .aboutContainer {
@@ -135,6 +135,12 @@
     font-weight: bold;
 }
 
+@media screen and (max-width: 2000px) {
+    .testimoniesContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media screen and (max-width: 1500px) {
     .testimoniesContainer {
         width: 100%;
@@ -153,9 +159,18 @@
     .galleryDisplay {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    #explain {
+        margin-left: 40px;
+    }
+    
 }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1280px){
+
+    .about {
+        margin-top: 20px;
+    }
 
     .testimoniesContainer {
         grid-template-columns: 1fr;
@@ -235,11 +250,14 @@
 
     .gallery > * {
         width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .galleryDisplay {
         row-gap: 7px;
-        margin-top: 45px;
+        margin-top: 10px;
     }
 
     .galleryDisplay > * {
