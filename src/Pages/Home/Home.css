@@ -6,7 +6,7 @@
     color: black;
     background-color: white;
     flex-wrap: wrap;
-    margin-top: 7%;
+    margin-top: 75px;
 }
 
 .homeContainer {
@@ -138,6 +138,11 @@ select {
 }
 
 @media screen and (max-width: 800px) {
+
+    .home {
+        margin-top: 10px;
+    }
+
     .jumbotron {
         display: none;
     }
