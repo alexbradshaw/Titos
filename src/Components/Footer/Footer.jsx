@@ -32,7 +32,7 @@ const Footer = () => {
                 </div>
             </div>
             <div id='ab'>
-                <h5>Designed and Maintained by Alex Bradshaw</h5>
+                <h5>Designed and Maintained by <a href='https://www.linkedin.com/in/alexander-bradshaw' target='_blank'>Alex Bradshaw</a></h5>
             </div>
         </div>
     );
