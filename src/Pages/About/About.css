@@ -43,6 +43,8 @@
 
 .galleryDisplay > * {
     border-radius: 10px;
+    width: 250px;
+    height: 250px;
 }
 
 .testimonies {
@@ -245,7 +247,7 @@
     }
 
     .gallery {
-        margin-top: 100px;
+        margin-top: 0px;
     }
 
     .gallery > * {
@@ -262,10 +264,12 @@
 
     .galleryDisplay > * {
         width: 150px;
+        height: 150px;
     }
 
     .testimonies {
         margin-top: 150px;
+        margin-bottom: 140px;
     }
     
     .testimoniesContainer {
@@ -276,6 +280,10 @@
         width: 350px;
         padding-top: 50px;
         padding-bottom: 30px;
+    }
+
+    #explain {
+        margin-left: 0px;
     }
 
 }
