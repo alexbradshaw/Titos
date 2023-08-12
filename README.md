@@ -1,7 +1,6 @@
 
 # Tito's Professional Barbershop
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5307ef25-5f21-4310-bdee-a4a75f20d456/deploy-status)](https://app.netlify.com/sites/titos-professional-barbershop/deploys)
 
 ## Description
 What was your motivation? 
@@ -12,16 +11,19 @@ What did you learn?
 
 ## Table of Contents
 - [Installation](#installation)
-- [Usage](#usage)
+- [Status](#status)
+- [Screenshots](#Screenshots)
 - [License](#license)
 - [Contributing](#contributing)
-- [Tests](#tests)
 - [Questions](#questions)
 
 ## Installation
 npm i, npm run dev
 
-## Usage
+## Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5307ef25-5f21-4310-bdee-a4a75f20d456/deploy-status)](https://app.netlify.com/sites/titos-professional-barbershop/deploys)
+
+## Screenshots
 ![Home Page](public/home.png?raw=true)
 ![About Page](public/about.png?raw=true)
 
