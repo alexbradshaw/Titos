@@ -2,12 +2,12 @@ import './About.css';
 
 import AnIcon from '../../Components/AnIcon/AnIcon';
 
-const About = () => {
+const About = (props) => {
 
     return (
         <div className='about'>
             <div className='aboutContainer'>
-                <Tito/>
+                <Tito socials={props.socials}/>
                 <AboutUs/>
                 <Testimonies/>
                 <Gallery/>
@@ -125,17 +125,7 @@ const Testimonies = () => {
     )
 }
 
-const Tito = () => {
-
-    const icons = [
-        {"social":"mingcute:phone-fill", "link":"tel:+17063513376"},
-        {"social":"mi:email", "link":"mailto:titogerman35@yahoo.com"},
-        {"social":"uiw:facebook", "link":"https://www.facebook.com/tito.suarez"},
-        {"social":"uil:instagram-alt", "link":"https://www.instagram.com/titoakagerman_thebarber"},
-        {"social":"cib:cashapp", "link":"https://cash.app/suarezgerm18"},
-        {"social":"ion:logo-venmo", "link":"https://account.venmo.com/u/German_suarez_2"},
-    ]
-
+const Tito = (props) => {
     return (
         <div className='tito'>
             <h1 id="meetTito" style={{"width":"100%","textAlign":"center"}}>Meet Tito</h1>
@@ -155,7 +145,7 @@ const Tito = () => {
                     <h2>Men Women Children</h2>
                     <div className="iconSection" style={{"width":"100%"}}>
                         <div className='iconContainer'>
-                            {icons.map((icon, index)=> {
+                            {props.socials.map((icon, index)=> {
                                 return (
                                     <AnIcon link={icon.link} social={icon.social} index={index + 'icon'} key={index + 'component'}/>
                                 )
