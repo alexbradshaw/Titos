@@ -31,7 +31,7 @@ function App() {
           <div className='display'>
             <Routes>
               <Route path='/' element={<Home/>}/>
-              <Route path='/#/about' element={<About socials={socials}/>}/>
+              <Route path='/about' element={<About socials={socials}/>}/>
             </Routes>
           </div>
           <Footer socials={socials}/>

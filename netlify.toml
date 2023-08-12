@@ -4,12 +4,13 @@
   functions = "netlify/functions"
   publish = "dist"
 
-  ## Uncomment to use this redirect for Single Page Applications like create-react-app.
-  ## Not needed for static site generators.
-  #[[redirects]]
-  #  from = "/*"
-  #  to = "/index.html"
-  #  status = 200
+  [[redirects]]
+    from = "/about"
+    to = "/"
+    status = 404
+    force = true
+    query = {path = ":path"}
+    conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
 
   ## (optional) Settings for Netlify Dev
   ## https://github.com/netlify/cli/blob/main/docs/netlify-dev.md#project-detection
