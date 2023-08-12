@@ -23,6 +23,22 @@
     width: 40%;
 }
 
+.aboutInformation > div > h1 {
+    font-size: 4rem;
+}
+
+.aboutInformation > div > p {
+    font-size: 1.5rem;
+}
+
+.gallery h1 {
+    font-size: 4rem;
+}
+
+.testimonies > * > h1 {
+    font-size: 4rem;
+}
+
 .gallery {
     width: 100%;
     display: flex;
@@ -165,6 +181,27 @@
     #explain {
         margin-left: 40px;
     }
+
+    .testimonies > * > h1 {
+        font-size: 2rem;
+    }
+
+    .aboutInformation > div > h1 {
+        font-size: xx-large;
+    }
+    
+    .aboutInformation > div > p {
+        font-size: large;
+    }
+
+    .gallery h1 {
+        font-size: 4rem;
+    }
+
+    .testimonies > * > h1 {
+        font-size: xx-large;
+    }
+    
     
 }
 
