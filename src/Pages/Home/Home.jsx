@@ -115,10 +115,10 @@ const Locations = () => {
 const Services = () => {
 
     const services = [
-        {"service":"Classic Cut", "small":"Haircut & professional finish.", "price":20},
-        {"service":"Fades", "small":"Clean, Popular, Excellent Choice", "price":25},
-        {"service":"Dry Shave", "small":"Razor Blade with Soap, Gel, etc.", "price":10},
-        {"service":"Wet Shave", "small":"Shaving Cream close shave", "price":15},
+        {"service":"Classic Cut", "small":"Haircut & professional finish.", "price":30},
+        {"service":"Fades", "small":"Clean, Popular, Excellent Choice", "price":30},
+        {"service":"Dry Shave", "small":"Razor Blade with Soap, Gel, etc.", "price":40},
+        {"service":"Wet Shave", "small":"Shaving Cream close shave", "price":40},
         {"service":"Classic Wax", "small":"Styling needs", "price":10},
         {"service":"Eyebrow Arch", "small":"Eyebrow touch up", "price":10},
         {"service":"And More!", "small":""},
