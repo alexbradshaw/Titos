@@ -2,6 +2,8 @@
 # Tito's Professional Barbershop
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
+[Deployed Link](https://titos-professional-barbershop.netlify.app/) 
+
 ## Description
 What was your motivation? 
 - A client needed a website.
@@ -34,5 +36,4 @@ npm i, npm run dev
 This website is complete. No contributions necessary.
 
 ## Questions
-[Deployed Version](https://titos-professional-barbershop.netlify.app/) <br>
 [Email](mailto:alexanderbradshaw5@gmail.com)
