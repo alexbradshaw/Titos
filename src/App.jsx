@@ -17,10 +17,10 @@ function App() {
     [
       {"social":"mingcute:phone-fill", "link":"tel:+17063513376"},
       {"social":"mi:email", "link":"mailto:titogerman35@yahoo.com"},
-      {"social":"uiw:facebook", "link":"https://www.facebook.com/tito.suarez"},
+      {"social":"uiw:facebook", "link": false ? "https://www.facebook.com/" : ""},
       {"social":"uil:instagram-alt", "link":"https://www.instagram.com/titoakagerman_thebarber"},
       {"social":"cib:cashapp", "link":"https://cash.app/suarezgerm18"},
-      {"social":"ion:logo-venmo", "link":"https://account.venmo.com/u/German_suarez_2"},
+      {"social":"ion:logo-venmo", "link": false ? "https://account.venmo.com/u/" : ""},
   ]
   );
 
