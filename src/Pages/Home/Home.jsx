@@ -4,7 +4,6 @@ import AnIcon from '../../Components/AnIcon/AnIcon';
 
 import '@fontsource/merriweather/';
 
-
 const Home = () => {
     return (
         <div className='home'>
@@ -23,6 +22,40 @@ const Home = () => {
     );
 
 };
+
+const Services = () => {
+
+    const services = [
+        {"service":"Classic Cut", "small":"Haircut & professional finish.", "price":30},
+        {"service":"Fades", "small":"Clean, Popular, Excellent Choice", "price":30},
+        {"service":"Dry Shave", "small":"Razor Blade with Soap, Gel, etc.", "price":40},
+        {"service":"Wet Shave", "small":"Shaving Cream close shave", "price":40},
+        {"service":"Classic Wax", "small":"Styling needs", "price":10},
+        {"service":"Eyebrow Arch", "small":"Eyebrow touch up", "price":10},
+        {"service":"And More!", "small":""},
+    ]
+
+    return (
+        <div>
+            <h1>Services</h1>
+            <div>
+                {services.map((service, index)=>{
+                    return (
+                        <div className='service' key={"service" + index}>
+                            <div className='serviceContainer'>
+                                <div>
+                                    <h2 key={index}>{service.service}</h2>
+                                    <h2 className='servicePrice'>{service.price ? '$' : ''}{service.price}</h2>
+                                </div>
+                            </div>
+                            <small>{service.small}</small>
+                        </div>
+                    )
+                })}
+            </div>
+        </div>
+    )
+}
 
 const Hours = () => {
 
@@ -48,7 +81,6 @@ const Hours = () => {
 
                         const style = index == today ? "black !important" : "gray";
                         const size = index == today ? "large" : "medium";
-                        // const hours = index == today ? "large" : "medium";
 
                         return (
                             <div className='hourTable' key={index} style={{"color":style, "fontSize":size}}>
@@ -107,40 +139,6 @@ const Locations = () => {
                 :
                     <Map location={"Sycamore"} src={"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1474.3301920801825!2d-83.41959945816608!3d33.947318833205486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f66d025b536fa1%3A0xfcd56abfe06a3f37!2sTito%20professional%20barbershop%20%232!5e0!3m2!1sen!2sus!4v1690956616227!5m2!1sen!2sus"} directions={"https://goo.gl/maps/uxYhJ6qEJaumk5gh7"}/>
                 }
-            </div>
-        </div>
-    )
-}
-
-const Services = () => {
-
-    const services = [
-        {"service":"Classic Cut", "small":"Haircut & professional finish.", "price":30},
-        {"service":"Fades", "small":"Clean, Popular, Excellent Choice", "price":30},
-        {"service":"Dry Shave", "small":"Razor Blade with Soap, Gel, etc.", "price":40},
-        {"service":"Wet Shave", "small":"Shaving Cream close shave", "price":40},
-        {"service":"Classic Wax", "small":"Styling needs", "price":10},
-        {"service":"Eyebrow Arch", "small":"Eyebrow touch up", "price":10},
-        {"service":"And More!", "small":""},
-    ]
-
-    return (
-        <div>
-            <h1>Services</h1>
-            <div>
-                {services.map((service, index)=>{
-                    return (
-                        <div className='service' key={"service" + index}>
-                            <div className='serviceContainer'>
-                                <div>
-                                    <h2 key={index}>{service.service}</h2>
-                                    <h2 className='servicePrice'>{service.price ? '$' : ''}{service.price}</h2>
-                                </div>
-                            </div>
-                            <small>{service.small}</small>
-                        </div>
-                    )
-                })}
             </div>
         </div>
     )
