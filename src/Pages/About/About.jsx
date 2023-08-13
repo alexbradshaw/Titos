@@ -24,7 +24,7 @@ const Tito = (props) => {
             <div className='titoInfo'>
                 <div className='titoHeader'>
                     <div className='image'>
-                        <img src="../../assets/titoheadshot.jpg" alt="Picture of Tito" id='tito'/>
+                        <img src="/titoheadshot.jpg" alt="Picture of Tito" id='tito'/>
                     </div>
                     <h1 id='outsideTitle'>Professional Hairstylist</h1>
                 </div>
@@ -148,7 +148,7 @@ const Gallery = () => {
                     <div className='galleryDisplay'>
                         {
                             photos.map((image, index)=>{
-                                return <img src={"../../assets/haircuts" + image.image} alt={image.alt} key={"haircut " + index}/>
+                                return <img src={"/haircuts" + image.image} alt={image.alt} key={"haircut " + index}/>
                             })
                         }
                     </div>
