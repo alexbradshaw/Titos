@@ -1,3 +1,5 @@
+/* About Styling */
+
 .about {
     height: 100%;
     background-color: white !important;
@@ -19,6 +21,168 @@
     width: auto;
 }
 
+@media screen and (max-width:1280px){
+    .about {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .aboutInformation {
+        width: 80%;
+        margin-top: 25px;
+    }
+}
+
+
+
+
+/* Tito Styling */
+
+.tito {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    margin-bottom: 300px;
+}
+
+#meetTito {
+    font-size: 4.5rem;
+}
+
+.titoInfo {
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#tito {
+    height: 70%;
+    border-radius: 190px;
+}
+
+#outsideTitle {
+    display: none;
+}
+
+#explain {
+    text-align: start;
+}
+
+#decade {
+    font-weight: bold;
+}
+
+.iconSection {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.iconContainer {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 50%;
+}
+
+.iconContainer a {
+    color: black !important;
+}
+
+@media screen and (max-width: 1500px) {
+    #meetTito {
+        font-size: 3.5rem;
+    }
+
+    #explain {
+        margin-left: 40px;
+    }
+
+    .iconContainer {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:1280px){
+    #meetTito {
+        font-size: 2.5rem;
+    }
+
+    .iconContainer {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:800px){
+    .tito {
+        margin-bottom: 100px;
+    }
+
+    #meetTito {
+        font-size: 2.0rem;
+    }
+
+    .titoInfo {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .titoHeader {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 30px;
+    }
+
+    .image {
+        height: 80%;
+    }
+
+    #tito {
+        width: 150px;
+        height: 180px;
+    }  
+
+    #outsideTitle {
+        font-size: 1.2rem;
+        display: inline;
+        margin-top: 55px;
+        margin-left: 20px;
+    }
+
+    #explain {
+        text-align: center;
+        font-size: .75rem;
+        margin-top: 35px;
+        margin-left: 0px;
+    }
+
+    #title {
+        font-size: 1.5rem;
+        display: none;
+    }
+
+    .iconContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 10px;
+        width: 100%;
+    }
+}
+
+
+
+
+/* About Us Styling */
+
 .aboutInformation {
     width: 40%;
 }
@@ -31,37 +195,20 @@
     font-size: 1.5rem;
 }
 
-.gallery h1 {
-    font-size: 4rem;
+@media screen and (max-width: 1500px) {
+    .aboutInformation > div > h1 {
+        font-size: xx-large;
+    }
+    
+    .aboutInformation > div > p {
+        font-size: large;
+    }
 }
 
-.testimonies > * > h1 {
-    font-size: 4rem;
-}
 
-.gallery {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    margin-bottom: 200px;
-}
 
-.galleryDisplay {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 75px;
-    row-gap: 35px;
-    overflow: hidden;
-    column-gap: 35px;
-}
 
-.galleryDisplay > * {
-    border-radius: 10px;
-    width: 250px;
-    height: 250px;
-}
+/* Testimonies Styling */
 
 .testimonies {
     width: 100%;
@@ -70,6 +217,10 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 300px;
+}
+
+.testimonies > * > h1 {
+    font-size: 4rem;
 }
 
 .testimoniesContainer {
@@ -99,60 +250,6 @@
     width: 80%;
 }
 
-.tito {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 1%;
-    margin-bottom: 300px;
-}
-
-.titoInfo {
-    width: 90%;
-    height: 80%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-#tito {
-    height: 70%;
-    border-radius: 190px;
-}
-
-#meetTito {
-    font-size: 4.5rem;
-}
-
-.iconContainer {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    width: 50%;
-}
-
-.iconContainer a {
-    color: black !important;
-}
-
-.iconSection {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-}
-
-#explain {
-    text-align: start;
-}
-
-#outsideTitle {
-    display: none;
-}
-
-#decade {
-    font-weight: bold;
-}
-
 @media screen and (max-width: 2000px) {
     .testimoniesContainer {
         grid-template-columns: 1fr 1fr;
@@ -160,69 +257,84 @@
 }
 
 @media screen and (max-width: 1500px) {
+    .testimonies > * > h1 {
+        font-size: xx-large;
+    }
+
     .testimoniesContainer {
         width: 100%;
         grid-template-columns: 1fr 1fr;
         column-gap: 50px;
     }
+}
 
-    .iconContainer {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+@media screen and (max-width:1280px){
+    .testimoniesContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:800px){
+    .testimonies {
+        margin-top: 150px;
+        margin-bottom: 140px;
+    }
+    
+    .testimoniesContainer {
+        width: auto;
     }
 
-    #meetTito {
-        font-size: 3.5rem;
+    .testimony {
+        width: 350px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+}
+
+
+
+
+/* Gallery Styling */
+
+.gallery {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.gallery h1 {
+    font-size: 4rem;
+}
+
+.galleryDisplay {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 75px;
+    row-gap: 35px;
+    overflow: hidden;
+    column-gap: 35px;
+}
+
+.galleryDisplay > * {
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+}
+
+@media screen and (max-width: 1500px) {
+    .gallery h1 {
+        font-size: 4rem;
     }
 
     .galleryDisplay {
         grid-template-columns: 1fr 1fr 1fr;
     }
-
-    #explain {
-        margin-left: 40px;
-    }
-
-    .testimonies > * > h1 {
-        font-size: 2rem;
-    }
-
-    .aboutInformation > div > h1 {
-        font-size: xx-large;
-    }
-    
-    .aboutInformation > div > p {
-        font-size: large;
-    }
-
-    .gallery h1 {
-        font-size: 4rem;
-    }
-
-    .testimonies > * > h1 {
-        font-size: xx-large;
-    }
-    
-    
 }
 
 @media screen and (max-width:1280px){
-
-    .about {
-        margin-top: 20px;
-    }
-
-    .testimoniesContainer {
-        grid-template-columns: 1fr;
-    }
-
-    #meetTito {
-        font-size: 2.5rem;
-    }
-
-    .iconContainer {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    
     .galleryDisplay {
         grid-template-columns: 1fr 1fr;
         column-gap: 5px;
@@ -230,59 +342,6 @@
 }
 
 @media screen and (max-width:800px){
-    .aboutInformation {
-        width: 80%;
-        margin-top: 25px;
-    }
-
-    .titoInfo {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .titoHeader {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-top: 30px;
-    }
-
-    .tito {
-        margin-bottom: 100px;
-    }
-
-    #meetTito {
-        font-size: 2.0rem;
-    }
-
-    #tito {
-        width: 150px;
-        height: 180px;
-    }    
-
-    #outsideTitle {
-        font-size: 1.2rem;
-        display: inline;
-        margin-top: 55px;
-        margin-left: 20px;
-    }
-
-    #title {
-        font-size: 1.5rem;
-        display: none;
-    }
-
-    .iconContainer {
-        grid-template-columns: 1fr 1fr 1fr;
-        row-gap: 10px;
-        width: 100%;
-    }
-
-    #explain {
-        text-align: center;
-        font-size: .75rem;
-        margin-top: 35px;
-    }
-
     .gallery {
         margin-top: 0px;
     }
@@ -303,24 +362,4 @@
         width: 150px;
         height: 150px;
     }
-
-    .testimonies {
-        margin-top: 150px;
-        margin-bottom: 140px;
-    }
-    
-    .testimoniesContainer {
-        width: auto;
-    }
-
-    .testimony {
-        width: 350px;
-        padding-top: 50px;
-        padding-bottom: 30px;
-    }
-
-    #explain {
-        margin-left: 0px;
-    }
-
 }
