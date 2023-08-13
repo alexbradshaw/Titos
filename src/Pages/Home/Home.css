@@ -1,3 +1,5 @@
+/* Home Styling */
+
 @media screen and (min-width: 2500px) {
     .home {
         margin-top: 6% !important;
@@ -41,23 +43,83 @@
     text-align: center;
 }
 
+@media screen and (max-width: 800px) {
+    .home {
+        margin-top: 10px;
+    }
+
+    .homeContainer {
+        margin-top: 5%;
+    }
+
+    .homeGrid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .columns {
+        padding-top: 0%;
+    }
+
+    #rightColumn {
+        margin-top: 30%;
+    }
+}
+
+
+
+
+/* Services Styling */
+
+.service {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.serviceContainer {
+    width: 100%;
+}
+
+.serviceContainer > * {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.servicePrice {
+    color: green;
+    text-align: end;
+}
+
+
+
+
+/* Hours Styling */
+
 .hourTable {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.imageContainer {
-    margin-top: 5%;
-    height: 40%;
-    width: 60%;
+@media screen and (max-width: 800px) {
+    .hourTable {
+        text-align: center;
+        font-size: small;
+        height: 0%;
+    }
+
+    .column{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
-.jumbotron {
-    width: 100%;
-    height: 100%;
-    background-image: url("/tito.jpg");
-    background-position: center -600px;
-}
+
+
+
+/* Locations Styling */
 
 .locations {
     width: 100%;
@@ -86,12 +148,6 @@
     align-items: flex-end;
 }
 
-.iFrame {
-    width: 100%;
-    height: 1000px;
-    align-self: flex-end;
-}
-
 #locations {
     width: 20%;
     font-size: 3rem;
@@ -106,11 +162,24 @@ select {
     font-family: 'Merriweather' !important;
 }
 
-.image {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+@media screen and (max-width: 800px) {
+    .locations {
+        align-content: flex-start;
+        margin-top: 25%;
+        margin-bottom: 0%;
+        height: auto;
+    }
+
+    select {
+        width: 24px !important;
+        margin-left: 35px;
+    }
 }
+
+
+
+
+/* Map Styling */
 
 .map {
     width: 100%;
@@ -119,99 +188,15 @@ select {
     flex-wrap: nowrap;
 }
 
-.servicePrice {
-    color: green;
-}
-
-.service {
+.iFrame {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.serviceContainer {
-    width: 100%;
-}
-
-.serviceContainer > * {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.servicePrice {
-    text-align: end;
+    height: 1000px;
+    align-self: flex-end;
 }
 
 @media screen and (max-width: 800px) {
-
-    .home {
-        margin-top: 10px;
-    }
-
-    .jumbotron {
-        display: none;
-    }
-
-    .homeGrid {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .homeContainer {
-        margin-top: 5%;
-    }
-
-    #rightColumn {
-        margin-top: 30%;
-    }
-
-    .hourTable {
-        text-align: center;
-        font-size: small;
-        height: 0%;
-    }
-
-    .columns {
-        padding-top: 0%;
-    }
-
     .iFrame {
         width: 100%;
         height: 450px;
     }
-    
-    select {
-        width: 24px !important;
-        margin-left: 35px;
-    }
-
-    .locations {
-        align-content: flex-start;
-        margin-top: 25%;
-        margin-bottom: 0%;
-        height: auto;
-    }
-
-    .hour {
-        display: flex;
-        align-items: center;
-    }
-
-    #Sunday {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .column{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .image {
-        height: 80%;
-    }
-
 }
