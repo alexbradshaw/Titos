@@ -69,8 +69,24 @@ const Hours = () => {
         {"day":"Saturday", "time":"8:30am - 3:30pm"},
     ]
 
+
     const date = new Date();
     const today = date.getDay();
+
+    const DayBlock = (props) => {
+        const style = props.index == props.today ? "black !important" : "gray";
+        const size = props.index == props.today ? "large" : "medium";
+    
+        return (
+            <div className='hourTable' key={props.index} style={{"color":style, "fontSize":size}}>
+                <div>
+                    <h2 className='tableH'>{props.hours.day}:</h2>
+                </div>
+                <h2 id={props.hours.day}>{props.hours.time}</h2>
+            </div>
+        )
+    
+    }
 
     return (
         <div>
@@ -78,18 +94,7 @@ const Hours = () => {
             <div className='column'>
                 {
                     times.map((hours, index)=>{
-
-                        const style = index == today ? "black !important" : "gray";
-                        const size = index == today ? "large" : "medium";
-
-                        return (
-                            <div className='hourTable' key={index} style={{"color":style, "fontSize":size}}>
-                                <div>
-                                    <h2 className='tableH'>{hours.day}:</h2>
-                                </div>
-                                <h2 id={hours.day}>{hours.time}</h2>
-                            </div>
-                        )
+                        return <DayBlock today={today} hours={hours} index={index} key={"day" + index}/>
                     })
                     }
             </div>
