@@ -1,13 +1,6 @@
 import './Footer.css';
-import { Icon } from '@iconify/react';
 
-const AnIcon = (props) => {
-    return (
-        <a href={props.link} target='_blank' key={props.index + "a"} > 
-            <Icon icon={props.social} key={props.index} width={40}/>
-        </a>
-    );
-}
+import AnIcon from '../Components/AnIcon/AnIcon';
 
 const Footer = (props) => {
     return (
