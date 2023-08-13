@@ -80,7 +80,7 @@ const Hours = () => {
         return (
             <div className='hourTable' key={props.index} style={{"color":style, "fontSize":size}}>
                 <div>
-                    <h2 className='tableH'>{props.hours.day}:</h2>
+                    <h2>{props.hours.day}:</h2>
                 </div>
                 <h2 id={props.hours.day}>{props.hours.time}</h2>
             </div>
