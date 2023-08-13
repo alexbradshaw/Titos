@@ -1,6 +1,6 @@
 import './Footer.css';
 
-import AnIcon from '../Components/AnIcon/AnIcon';
+import AnIcon from '../AnIcon/AnIcon';
 
 const Footer = (props) => {
     return (
