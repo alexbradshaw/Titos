@@ -123,19 +123,19 @@ const Testimonies = () => {
 
 const Gallery = () => {
 
-    const photos = [
-        {"image":"/haircut1.jpg", "alt":"Cleaned up profile."},
-        {"image":"/haircut2.jpg", "alt":"Taper fade into a clean beard."},
-        {"image":"/haircut3.jpg", "alt":"Nice fade with accent line."},
-        {"image":"/haircut4.jpg", "alt":"Great lineup on a young kid."},
-        {"image":"/haircut5.jpg", "alt":"Simple clean fade."},
-        {"image":"/haircut6.jpg", "alt":"Clean hairline with beard line."},
-        {"image":"/haircut7.jpg", "alt":"Fade on young kid."},
-        {"image":"/haircut8.jpg", "alt":"Transitional fade."},
-        {"image":"/haircut9.jpg", "alt":"Simple haircut."},
-        {"image":"/haircut10.jpg", "alt":"Top cut with a fade."},
-        {"image":"/haircut11.jpg", "alt":"Chopped top with a fade into the beard."},
-        {"image":"/haircut12.jpg", "alt":"Sweet fade with accent line."},
+    const alts = [
+        "Cleaned up profile.",
+        "Taper fade into a clean beard.",
+        "Nice fade with accent line.",
+        "Great lineup on a young kid.",
+        "Simple clean fade.",
+        "Clean hairline with beard line.",
+        "Fade on young kid.",
+        "Transitional fade.",
+        "Simple haircut.",
+        "Top cut with a fade.",
+        "Chopped top with a fade into the beard.",
+        "Sweet fade with accent line.",
     ]
 
     return (
@@ -147,8 +147,8 @@ const Gallery = () => {
                 <div>
                     <div className='galleryDisplay'>
                         {
-                            photos.map((image, index)=>{
-                                return <img src={"/haircuts" + image.image} alt={image.alt} key={"haircut " + index}/>
+                            alts.map((alt, index)=>{
+                                return <img src={`/haircuts/haircut${index}.jpg`} alt={alt} key={"haircut " + index}/>
                             })
                         }
                     </div>
