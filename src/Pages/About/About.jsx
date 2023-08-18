@@ -39,7 +39,7 @@ const Tito = (props) => {
                         <div className='iconContainer'>
                             {props.socials.map((icon, index)=> {
                                 return (
-                                    <AnIcon link={icon.link} social={icon.social} index={index + 'icon'} key={index + 'component'}/>
+                                    <AnIcon link={icon.link} social={icon.social} index={index + 'icon'} key={index + 'component'} alt={icon.alt}/>
                                 )
                                 })}
                         </div>
