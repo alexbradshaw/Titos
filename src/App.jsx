@@ -15,12 +15,12 @@ function App() {
 
   const [socials] = useState(
     [
-      {"social":"mingcute:phone-fill", "link":"tel:+17063513376"},
-      {"social":"mi:email", "link":"mailto:titogerman35@yahoo.com"},
-      {"social":"uiw:facebook", "link": false ? "https://www.facebook.com/" : ""},
-      {"social":"uil:instagram-alt", "link":"https://www.instagram.com/titoakagerman_thebarber"},
-      {"social":"cib:cashapp", "link":"https://cash.app/suarezgerm18"},
-      {"social":"ion:logo-venmo", "link": false ? "https://account.venmo.com/u/" : ""},
+      {"social":"mingcute:phone-fill", "link":"tel:+17063513376","alt":"telephone link"},
+      {"social":"mi:email", "link":"mailto:titogerman35@yahoo.com","alt":"email link"},
+      {"social":"uiw:facebook", "link": false ? "https://www.facebook.com/" : "","alt":"facebook link"},
+      {"social":"uil:instagram-alt", "link":"https://www.instagram.com/titoakagerman_thebarber","alt":"instagram link"},
+      {"social":"cib:cashapp", "link":"https://cash.app/suarezgerm18","alt":"cashapp link"},
+      {"social":"ion:logo-venmo", "link": false ? "https://account.venmo.com/u/" : "","alt":"venmo link"},
   ]
   );
 
