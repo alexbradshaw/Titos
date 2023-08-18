@@ -13,8 +13,7 @@ import {
 
 function App() {
 
-  const [socials] = useState(
-    [
+ const socials = [
       {"social":"mingcute:phone-fill", "link":"tel:+17063513376","alt":"telephone link"},
       {"social":"mi:email", "link":"mailto:titogerman35@yahoo.com","alt":"email link"},
       {"social":"uiw:facebook", "link": false ? "https://www.facebook.com/" : "","alt":"facebook link"},
@@ -22,7 +21,7 @@ function App() {
       {"social":"cib:cashapp", "link":"https://cash.app/suarezgerm18","alt":"cashapp link"},
       {"social":"ion:logo-venmo", "link": false ? "https://account.venmo.com/u/" : "","alt":"venmo link"},
   ]
-  );
+
 
   return (
     <Router>
