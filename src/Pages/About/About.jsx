@@ -57,7 +57,7 @@ const AboutUs = () => {
                 <h1>About Tito's Barbershop</h1>
             </div>
             <div>
-                <p>Tito's Professional Barbershop provides high quality salon services for men, women and kids, a unique customer focus, all in a warm, friendly atmosphere. We are a modern design barbershop that focuses on your hair's best experience. </p>
+                <p>Tito's Professional Barbershop provides high quality salon services for men, women and kids, a unique customer focus, all in a warm, friendly atmosphere. We are a modern design barbershop that focuses on your hair's best experience.</p>
             </div>
         </div>
     )
