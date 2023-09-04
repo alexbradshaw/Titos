@@ -1,3 +1,7 @@
+:root {
+    --active-color: white
+}
+
 /* Header Styling */
 
 .header {
@@ -31,6 +35,10 @@
 .headerContainer > * {
     color: rgba(255, 255, 255, 0.87) !important;
     font-size: 2rem;
+}
+
+.active {
+    text-shadow: 0 0 20px #eeeeee, 0 0 30px var(--active-color), 0 0 40px var(--active-color), 0 0 50px var(--active-color), 0 0 60px var(--active-color), 0 0 70px var(--active-color), 0 0 80px var(--active-color);
 }
 
 @media screen and (max-width: 800px) {
