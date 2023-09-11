@@ -43,7 +43,7 @@
     text-align: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1150px) {
     .home {
         margin-top: 10px;
     }
@@ -60,6 +60,7 @@
 
     .columns {
         padding-top: 0%;
+        width: 100%;
     }
 
     #rightColumn {
